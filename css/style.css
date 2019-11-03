@@ -313,3 +313,6 @@ body .main #content section p.timedescription {
     font-size: 2rem;
 }
 
+.vp {
+    height: 150% !important;
+}
