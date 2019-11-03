@@ -14,6 +14,8 @@
             $.extend(settings, options);
         }
 
+        // new Date('2021-02-13T15:00:00');
+
         //create the countdown processing function
         function countdown_proc() {
             var eventDate = Date.parse(settings.date) / 1000;
@@ -75,7 +77,7 @@
 //Provide the plugin settings
 $("#countdown").countdown({
     //The countdown end date
-    date: "13 Februrary 2020 24:00:00",
+    date: "2020-02-13T15:00:00",
 
     // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
     format: "on"
