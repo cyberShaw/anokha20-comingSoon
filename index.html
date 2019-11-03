@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Anokha 2020!</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>    
+    <div class="main container-fluid">
+        <div id="content">
+            <div class="row f1">
+                <div class="col">
+                    <img src="./assets/images/logo.png" height="100" width="100">
+                </div>
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <h1 class="center__text glitch is-glitching"
+                    style="font-size: 3rem; text-transform: lowercase;" data-text="anokha 2020">anokha 2020
+                </h1>
+            </div>
+            <div id="app">
+
+            </div>
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <section>
+                    <ul id="countdown" style="font-family: 'IBM Plex Mono', sans-serif;">
+                        <li><span class="days timenumbers">01</span>
+                            <p class="timeRefDays timedescription">days</p>
+                        </li>
+                        <li><span class="hours timenumbers">00</span>
+                            <p class="timeRefHours timedescription">hours</p>
+                        </li>
+                        <li><span class="minutes timenumbers">00</span>
+                            <p class="timeRefMinutes timedescription">minutes</p>
+                        </li>
+                        <li><span class="seconds timenumbers yellow-text">00</span>
+                            <p class="timeRefSeconds timedescription">seconds</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Dare to be different')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString('Coming Soon')
+            .pauseFor(2500)
+            .start();
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+    
